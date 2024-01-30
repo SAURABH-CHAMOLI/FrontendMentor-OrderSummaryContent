@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    min-height:100vh;
+}
+
+.container{
+    margin:auto;
+    margin-top: 7%;
+    padding:0;
+    background-color: white;
+    height: 675px;
+    max-width:450px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.text{
+    padding:50px;
+}
+.heading{
+    margin-bottom: 25px;
+}
+h3{
+    text-align: center;
+    color:hsl(223, 47%, 23%);
+    font-weight: 800;
+}
+.heading p{
+    color:hsl(224, 23%, 55%);
+    text-align: center;
+}
+.charge-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+.charge{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+}
+.charge-text{
+    line-height: 8px;
+    margin-left: 20px;
+    text-align: end;
+}
+.charge-text p{
+    color:hsl(224, 23%, 55%);
+    font-size: 16px;
+    text-align: left;
+}
+h5{
+    font-size: 15px;
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+a:hover{
+    text-decoration: none;
+}
+.btn{
+    width:360px;
+    height:50px;
+    margin-top: 10px;
+    border-radius: 14px;
+    color:white
+}
+.first{
+    background-color: hsl(245, 75%, 52%);
+}
+.first:hover{
+    background-color: hsl(224, 23%, 55%);
+    color:white
+}
+.second{
+    color:hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+.second:hover{
+    color:hsl(223, 47%, 23%)
+}
+
+@media only screen and (max-width: 460px) {
+    .container {
+        max-width: 80%;
+    }
+    .btn{
+        max-width: 100%;
+    }
+    .text{
+        padding: 38px;
+    }
+    .charge{
+        margin-right: 30px;
+    }
+    .heading p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .btn{
+        font-size: 20px;
+    }
+}
+ 
